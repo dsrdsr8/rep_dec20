@@ -1,2 +1,11 @@
 hello 
 
+git remote remove origin  : remove remote if you already added it.
+
+git remote add origin https://<PERSONALACCESSTOKEN>@github.com/<USERNAME>/<REPO>.git
+
+git remote add origin https://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@github.com/dsrdsr8/rep_dec20.git
+
+git push origin master 
+
+
