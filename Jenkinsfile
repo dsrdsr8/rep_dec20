@@ -34,7 +34,7 @@ pipeline
 
     	always
     	{
-    		emailext body: '', subject: 'maven build', to: 'dsr.dsr90@gmail.com'    	}
+    		echo 'build completed'    	}
 
     }
 }
