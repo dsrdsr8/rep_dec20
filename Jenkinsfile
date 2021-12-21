@@ -4,7 +4,16 @@ pipeline
 
     stages 
     {
-        stage('Build') 
+        stage('Checkout Code') 
+        {
+            steps 
+            {
+                echo 'Build App'
+				checkout scm
+            }
+        }
+		
+		stage('Build') 
         {
             steps 
             {
