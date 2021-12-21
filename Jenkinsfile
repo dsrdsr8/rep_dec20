@@ -18,7 +18,7 @@ pipeline
             steps 
             {
                 echo 'Build App'
-				mvn clean install
+				bat 'mvn clean install'
             }
         }
 
