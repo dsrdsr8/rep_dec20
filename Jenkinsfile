@@ -8,7 +8,7 @@ pipeline
         {
             steps 
             {
-                echo 'Build App'
+                echo 'Checkout the files from git repo-- Worked'
 				checkout scm
             }
         }
@@ -18,6 +18,7 @@ pipeline
             steps 
             {
                 echo 'Build App'
+				mvn clean install
             }
         }
 
