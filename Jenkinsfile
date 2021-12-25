@@ -13,9 +13,9 @@ pipeline
             }
         }
 		
-<<<<<<< HEAD
+
        stage('Build') 
-=======
+
 	stage('Build') 
 >>>>>>> 78de36acf200d21a9306d7f4b5b72724534b731d
         {
