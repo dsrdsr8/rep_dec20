@@ -40,7 +40,7 @@ pipeline
             steps
             {
                 echo 'Nexus Upload Code'
-		   
+		nexusArtifactUploader artifacts: [[artifactId: 'spring-boot-starter-parent', classifier: '', file: 'mywebapp', type: 'jar']], credentialsId: '', groupId: 'org.springframework.boot', nexusUrl: '34.93.113.226:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snapshots', version: '1.2.2.RELEASE'
             }
         }
 
