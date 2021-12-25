@@ -30,8 +30,7 @@ pipeline
             {
                 echo 'In code analysis for first time'
                 withSonarQubeEnv('sonar') { 
-                sh 'mvn sonar:sonar'               
-
+			sh 'mvn sonar:sonar'       }        
             }
         }
 
