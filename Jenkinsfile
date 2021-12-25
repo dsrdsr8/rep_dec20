@@ -13,15 +13,14 @@ pipeline
             }
         }
 		
-		stage('Build') 
+	stage('Build') 
         {
             steps 
             {
                 echo 'Build App'
 		echo 'bat mvn clean install -- thi is for Windows'
 		echo 'linux syntas mvn clean install'
-		sh 'mvn clean install'
-		
+		sh 'mvn clean install'	
             }
         }
 
