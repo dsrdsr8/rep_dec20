@@ -25,11 +25,11 @@ pipeline
             }
         }
 
-        stage('Test') 
+        stage('sonar analysis') 
         {
             steps 
             {
-                echo 'Test App'
+                echo 'In code analysis for first time'
             }
         }
 
