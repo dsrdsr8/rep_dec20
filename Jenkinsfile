@@ -19,7 +19,7 @@ pipeline
             {
                 echo 'Build App'
 		echo 'bat mvn clean install -- thi is for Windows'
-		mvn clean install
+		sh 'mvn clean install'
             }
         }
 
