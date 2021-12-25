@@ -12,28 +12,17 @@ pipeline
 				checkout scm
             }
         }
-		
-
-       stage('Build') 
-
+	    
 	stage('Build') 
->>>>>>> 78de36acf200d21a9306d7f4b5b72724534b731d
         {
             steps 
             {
                 echo 'Build App'
 		echo 'bat mvn clean install -- thi is for Windows'
 		echo 'linux syntas mvn clean install'
-<<<<<<< HEAD
-		
-            }
-        }
-
-=======
 		sh 'mvn clean install'
             }
-        }
-
+        }  
         stage('sonar analysis') 
         {
             steps 
@@ -45,7 +34,7 @@ pipeline
 		}       
             }
         }
->>>>>>> 78de36acf200d21a9306d7f4b5b72724534b731d
+
         stage('Nexu Upload')
         {
             steps
@@ -62,12 +51,5 @@ pipeline
                 echo 'Deploy App'
             }
         }
-<<<<<<< HEAD
-     }    
-=======
-  
     }
-
-  
->>>>>>> 78de36acf200d21a9306d7f4b5b72724534b731d
 }
